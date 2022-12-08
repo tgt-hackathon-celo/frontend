@@ -1,0 +1,37 @@
+<section class="container py-4">
+    <div class="d-flex justify-content-center align-items-center w-100">
+        <div class="card-login">
+            <div class="d-flex justify-content-center">
+                <img src="../../assets/logo/logo-com-nome.png" width="200" height="200" alt="logo-com-nome">
+            </div>
+            <form [formGroup]="form" (ngSubmit)="confirm">
+                <div class="d-flex flex-column" style="width: 100% !important;">
+                    <p>ja tem login? <a [routerLink]="['/']">Fazer login</a></p>
+
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" class="form-control input-login" formControlName="name" placeholder="Digite">
+
+                    <label for="email" class="mt-3">Email</label>
+                    <input type="email" id="email" class="form-control input-login" formControlName="email" placeholder="Digite">
+
+                    <label for="cpf" class="mt-3">CPF</label>
+                    <input type="text" id="cpf" class="form-control input-login" formControlName="cpf" mask="000.000.000-00" placeholder="Digite">
+
+                    <label for="wallet" class="mt-3">Wallet</label>
+                    <input type="text" id="wallet" class="form-control input-login" formControlName="wallet" placeholder="Digite">
+
+                    <label for="phone" class="mt-3">Telefone</label>
+                    <input type="text" id="phone" class="form-control input-login" formControlName="phone" mask="(00) 00000-0000" placeholder="Digite">
+                    
+                    <label for="password" class="mt-3">Senha</label>
+                    <input type="password" id="password" class="form-control input-login" formControlName="password">
+
+                    <label for="passwordConfirm" class="mt-3">Confirmar senha</label>
+                    <input type="password" id="passwordConfirm" class="form-control input-login" formControlName="passwordConfirm">
+
+                    <button class="btn btn-login mt-4">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

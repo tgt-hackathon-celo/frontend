@@ -1,0 +1,28 @@
+<section *ngIf="splash" class="bg-splash animate__animated" id="splash-animation">
+    <div class="d-flex align-items-center justify-content-center">
+        <img src="../../assets/logo/logo-simples.png" alt="logo" class="animate__animated animate__fadeIn" width="300">
+    </div>
+</section>
+<section *ngIf="!splash" class="animate__animated animate__fadeInDown px-4">
+    <div class="d-flex justify-content-center align-items-center w-100" style="height: 100vh !important;">
+        <div class="card-login">
+            <div class="d-flex justify-content-center">
+                <img src="../../assets/logo/logo-com-nome.png" width="200" height="200" alt="logo-com-nome">
+            </div>
+            <form [formGroup]="form" (ngSubmit)="confirm">
+                <div class="d-flex flex-column" style="width: 100% !important;">
+                    <p>Não tem login? <a [routerLink]="['/cadastro']">Se cadastre</a></p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control input-login" formControlName="email">
+
+                    <label for="password" class="mt-3">Senha</label>
+                    <input type="password" id="password" class="form-control input-login" formControlName="password">
+                    <a href="" class="mt-2">Esqueci minha senha</a>
+
+
+                    <button class="btn btn-login mt-4" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
