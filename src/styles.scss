@@ -1,9 +1,184 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import "bootstrap-icons/font/bootstrap-icons.scss";
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('./assets/font/helvetica.ttc');
+}
 
 * {
-    font-family: 'DM Sans' !important;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    box-sizing: border-box;
+    font-family: 'helvetica' !important;
+}
+
+
+/* fonts */
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+/* size-fonts */
+.font-size-9 {
+    font-size: 9px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-22 {
+    font-size: 22px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-28 {
+    font-size: 28px;
+}
+
+.font-size-32 {
+    font-size: 32px;
+}
+
+.font-size-36 {
+    font-size: 36px;
+}
+
+.font-size-40 {
+    font-size: 40px;
+}
+
+.font-size-48 {
+    font-size: 48px;
+}
+
+.font-size-55 {
+    font-size: 55px;
+}
+
+.font-size-90 {
+    font-size: 90px;
+}
+
+.line-16 {
+    line-height: 16px !important;
+}
+
+.line-19 {
+    line-height: 19px !important;
+}
+
+.line-20 {
+    line-height: 20px !important;
+}
+
+.line-24 {
+    line-height: 24px !important;
+}
+
+.line-26 {
+    line-height: 26px !important;
+}
+
+.line-32 {
+    line-height: 32px !important;
+}
+
+.line-34 {
+    line-height: 34px !important;
+}
+
+.line-43 {
+    line-height: 43px !important;
+}
+
+.line-50 {
+    line-height: 50px !important;
+}
+
+.line-56 {
+    line-height: 56px !important;
+}
+
+.line-70 {
+    line-height: 70px !important;
+}
+
+// color
+.text-black {
+    color: #505050;
+}
+
+.color-muted {
+    color: #C5C5C5;
+}
+
+// Tool´s
+.br-10 {
+    border-radius: 10px;
+}
+.br-100 {
+    border-radius: 100px;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+// background
+.bg-blur {
+    backdrop-filter: blur(10px);
+}
+
+.bg-whitetransparent {
+    background-color: rgba(255, 255, 255, 0.31);
+}
+
+.bg-green{
+    background-color: #2E8A5F;
+}
+
+.bg-orange{
+    background-color: #F1BB62;
 }
 
 .bg-splash {

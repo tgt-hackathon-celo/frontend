@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-mapa',
@@ -6,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mapa.component.scss']
 })
 export class MapaComponent implements OnInit {
-
-  constructor() { }
+  form: FormGroup;
+  constructor(
+    private formBuilder: FormBuilder
+  ) {
+    this.form = this.formBuilder.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required]]
+    })
+   }
 
   ngOnInit(): void {
   }

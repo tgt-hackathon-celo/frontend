@@ -1,4 +1,25 @@
-<main class="">
+<main class="w-100 h-100 ">
+    <form [formGroup]="form" class="row">
+        <div class="col-5 position-absolute m-3 z-10">
+            <div class="w-100 d-flex bg-blur br-10 bg-whitetransparent p-2 h-auto">
+                <button type="button" class="btn br-10 mx-1 w-25 p-2 d-flex justify-content-center align-items-center fw-700 font-size-16 line-18 text-black">
+                    <i class="bi mr-2 bi-map"></i> Mapa
+                </button>
+                <button type="button" class="btn br-10 mx-1 w-75 p-2 justify-content-center d-flex align-items-center fw-700 font-size-16 line-18 color-muted">
+                    <i class="bi mr-2 bi-calendar-plus"></i> Criar ação
+                </button>
+            </div>
+            <div class="w-100 mt-4 d-block bg-blur br-10 bg-whitetransparent px-3 py-2 h-auto">
+                <input type="search" placeholder="Pesquisa" class="btn text-left br-10 mx-1 w-100 p-2 fw-300 font-size-16 line-18 text-black"/>
+                <button type="button" class="btn bg-green br-10 mx-1 w-100 p-2 justify-content-center d-flex align-items-center mt-2 fw-700 font-size-16 line-16 text-light">
+                    Pesquisar
+                </button>
+            </div>
+        </div>
+        <button type="button" class="btn br-100 position-absolute btn-plus z-10 bg-orange" style="padding: 0.6rem 0.9rem;">
+            <i class="bi font-size-24 text-light bi-plus-lg"></i>
+        </button>
+    </form>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d245638.72743477012!2d-47.900166663366534!3d-15.851071681156272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1670596951180!5m2!1spt-BR!2sbr"
-    class="border-none w-100 h-100" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    class="border-none w-100 h-100 position-absolute" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </main>
