@@ -9,9 +9,13 @@ const routes: Routes = [
     path: '', component: AppComponent, children: [
       { path: '', component: LoginComponent },
       { path: 'cadastro', component: CadastroComponent },
-
     ]
-
+  },
+  {
+    path: 'logged',
+    loadChildren: () => 
+      import('./logged/logged.module')
+        .then(m => m.LoggedModule)
   }
 ];
 
