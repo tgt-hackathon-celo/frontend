@@ -18,9 +18,7 @@
                     <label for="password" class="mt-3">Senha</label>
                     <input type="password" id="password" class="form-control input-login" formControlName="password">
                     <a href="" class="mt-2">Esqueci minha senha</a>
-
-
-                    <button class="btn btn-login mt-4" type="submit">Login</button>
+                    <button [disabled]="form.invalid" (click)="goMap()" class="btn btn-login mt-4" type="submit">Login</button>
                 </div>
             </form>
         </div>
