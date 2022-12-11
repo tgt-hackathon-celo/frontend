@@ -6,19 +6,21 @@ import { NgxMaskModule } from 'ngx-mask';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { LoggedModule } from './logged/logged.module';
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    CadastroComponent
+    CadastroComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    LoggedModule,
     ReactiveFormsModule,
     NgxMaskModule.forRoot(),
   ],

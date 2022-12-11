@@ -1,0 +1,57 @@
+<main class="w-100 h-100">
+    <form [formGroup]="form" class="row">
+        <div class="col-5 col-map position-absolute max-w-430 m-3 z-10">
+            <div (click)="btnsidebar()" class="w-fit cursor bg-blur mb-3 linebar d-none br-10 bg-whitetransparent p-2 h-auto">
+                <i [class]="linebar ? 'd-none':'d-flex'" class="bi mx-2 font-size-20 color-black bi-list"></i>
+                <i [class]="linebar ? 'd-flex':'d-none'" class="bi mx-2 bi-x-lg font-size-20 color-black"></i>
+            </div>
+        <div [class]="sidebar ? 'd-block':'d-none'" class="w-100 h-100 sidebar">
+            <div class="w-100 d-flex bg-blur br-10 bg-whitetransparent p-2 h-auto">
+                <button type="button" class="btn bg-white br-10 mx-1 w-25 p-2 d-flex justify-content-center align-items-center fw-700 font-size-16 line-18 color-black">
+                    <i class="bi mr-2 bi-map"></i> Mapa
+                </button>
+                <button type="button" class="btn bg-white br-10 mx-1 w-75 p-2 justify-content-center d-flex align-items-center fw-700 font-size-16 line-18 color-muted">
+                    <i class="bi mr-2 bi-calendar-plus"></i> Criar ação
+                </button>
+                <div (click)="goProfile()" class="w-48 cursor bg-profile br-10"></div>
+            </div>
+            <div class="w-100 mt-4 d-block bg-blur br-10 bg-whitetransparent px-3 py-2 h-auto">
+                <input type="search" placeholder="Pesquisa" class="btn text-left br-10 w-100 p-2 fw-300 font-size-16 line-18 color-black"/>
+                <button type="button" class="btn bg-green br-10 w-100 p-2 justify-content-center d-flex align-items-center mt-2 fw-700 font-size-16 line-16 text-light">
+                    Pesquisar
+                </button>
+            </div>
+            <div [class]="searchzone ? 'd-flex':'d-none'" class="search-zone overflow-y w-100 bg-blur bg-whitetransparent p-3 h-auto br-20">
+                <div class="row ml-0 w-100">
+                    <div class="col-12 justify-content-center d-flex mb-3">
+                        <h3 (click)="goSearch()" class="bar-gray"></h3>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div *ngFor="let item of searchresult" class="w-100 d-block bg-white my-3 p-3 br-20">
+                            <p class="fw-700 font-size-14 line-16 d-grid color-black">{{item.name}},
+                                <span class="fw-400 font-size-14 line-16 color-muted">{{item.date}}</span></p>
+                            <p class="fw-700 font-size-14 line-16 color-black">
+                                Organizado por:&nbsp;<span class="fw-400 font-size-14 line-16 color-muted">{{item.association}}</span>
+                            </p>
+                            <div class="w-100 d-flex">
+                                <button type="button" class="btn br-10 bg-muted text-light fw-700 mr-2 font-size-14 line-16 h-40 w-75">
+                                    Saiba mais
+                                </button>
+                                <button type="button" class="btn br-10 bg-orange text-light fw-700 mr-2 font-size-14 line-16 h-40 w-50">
+                                    <i class="bi mr-2 text-light bi-calendar-plus"></i> Participar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+        </div>
+        <button type="button" (click)="goSearch()" class="btn br-100 position-absolute btn-plus z-10 bg-orange" style="padding: 0.6rem 0.9rem;">
+            <i class="bi font-size-24 text-light bi-plus-lg"></i>
+        </button>
+    </form>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d245638.72743477012!2d-47.900166663366534!3d-15.851071681156272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1670596951180!5m2!1spt-BR!2sbr"
+    class="border-none w-100 h-100 position-absolute" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</main>

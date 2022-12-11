@@ -1,9 +1,255 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import "bootstrap-icons/font/bootstrap-icons.scss";
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('./assets/font/helvetica.ttc');
+}
 
 * {
-    font-family: 'DM Sans' !important;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    box-sizing: border-box;
+    font-family: 'helvetica' !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #01ff5e00 !important;
+}
+
+
+/* fonts */
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+/* size-fonts */
+.font-size-9 {
+    font-size: 9px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-22 {
+    font-size: 22px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-28 {
+    font-size: 28px;
+}
+
+.font-size-30 {
+    font-size: 30px;
+}
+
+.font-size-36 {
+    font-size: 36px;
+}
+
+.font-size-40 {
+    font-size: 40px;
+}
+
+.font-size-48 {
+    font-size: 48px;
+}
+
+.font-size-55 {
+    font-size: 55px;
+}
+
+.font-size-90 {
+    font-size: 90px;
+}
+
+.line-16 {
+    line-height: 16px !important;
+}
+
+.line-19 {
+    line-height: 19px !important;
+}
+
+.line-20 {
+    line-height: 20px !important;
+}
+
+.line-24 {
+    line-height: 24px !important;
+}
+
+.line-26 {
+    line-height: 26px !important;
+}
+
+.line-32 {
+    line-height: 32px !important;
+}
+
+.line-36 {
+    line-height: 36px !important;
+}
+
+.line-43 {
+    line-height: 43px !important;
+}
+
+.line-50 {
+    line-height: 50px !important;
+}
+
+.line-56 {
+    line-height: 56px !important;
+}
+
+.line-70 {
+    line-height: 70px !important;
+}
+
+// color
+.color-black {
+    color: #505050;
+}
+
+.color-muted {
+    color: #C5C5C5;
+}
+
+// Tool´s
+.br-10 {
+    border-radius: 10px;
+}
+
+.br-20 {
+    border-radius: 20px;
+}
+
+.br-100 {
+    border-radius: 100px;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-none {
+    display: none;
+}
+
+.border-bottom-gray {
+    border-bottom: 1px solid #E5E2E2;
+}
+
+.overflow-y {
+    overflow-y: scroll;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.h-40 {
+    height: 40px;
+}
+
+.w50h50 {
+    width: 50px;
+    height: 50px;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.max-w-430 {
+    max-width: 430px;
+}
+
+.overflow-y {
+    overflow-y: scroll;
+}
+
+.w-48 {
+    width: 48px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+// background
+.bg-blur {
+    backdrop-filter: blur(10px);
+}
+
+.bg-whitetransparent {
+    background-color: rgba(255, 255, 255, 0.31);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-green {
+    background-color: #2E8A5F;
+}
+
+.bg-muted {
+    background-color: #C5C5C5;
+}
+
+.bg-orange {
+    background-color: #F1BB62;
 }
 
 .bg-splash {
@@ -32,4 +278,98 @@
 
 .input-login {
     height: 51px !important;
+}
+
+
+// PERFIL
+.article {
+    top: -40px;
+    border-radius: 15px 15px 0px 0px !important;
+}
+
+.wallpaper-perfil {
+    background-image: url(./assets/img/bar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.img-bg-perfil {
+    background-image: url(https://awsimages.detik.net.id/community/media/visual/2020/08/12/mia-khalifa-9_169.jpeg?w=620);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:1000px) {
+    .search-zone {
+        height: calc(100vh - 279px) !important;
+        animation-name: searchresult;
+        animation-duration: .5s;
+        margin-top: 2rem;
+    }
+
+    @keyframes searchresult {
+        0% {
+            margin-top: 10rem !important;
+            opacity: 0;
+        }
+
+        100% {
+            margin-top: 2rem !important;
+            opacity: 1;
+        }
+    }
+
+    .sidebar {
+        margin-left: -500px;
+    }
+
+    .linebar {
+        display: flex !important;
+        ;
+    }
+}
+
+@media(max-width: 430px) {
+    .col-map {
+        padding: 0 !important;
+    }
+
+    .linebar {
+        margin: 0 20px;
+    }
+
+    .sidebar {
+        padding: 0 19px;
+    }
+}
+
+@media(min-width:999px) {
+    .search-zone {
+        height: calc(100vh - 229px) !important;
+        animation-name: searchresult;
+        animation-duration: .5s;
+    }
+
+    @keyframes searchresult {
+        0% {
+            margin-top: 10rem !important;
+            opacity: 0;
+        }
+
+        100% {
+            margin-top: 2rem !important;
+            opacity: 1;
+        }
+    }
+
+    .sidebar {
+        display: block !important;
+    }
+
+    .linebar {
+        display: none !important;
+    }
 }
