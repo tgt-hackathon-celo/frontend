@@ -16,8 +16,8 @@
                 <div (click)="goProfile()" class="w-48 cursor bg-profile br-10"></div>
             </div>
             <div class="w-100 mt-4 d-block bg-blur br-10 bg-whitetransparent px-3 py-2 h-auto">
-                <input type="search" placeholder="Pesquisa" class="btn text-left br-10 w-100 p-2 fw-300 font-size-16 line-18 color-black"/>
-                <button type="button" class="btn bg-green br-10 w-100 p-2 justify-content-center d-flex align-items-center mt-2 fw-700 font-size-16 line-16 text-light">
+                <input type="search" formControlName="search" placeholder="Pesquisa" class="btn text-left br-10 w-100 p-2 fw-300 font-size-16 line-18 color-black"/>
+                <button type="submit" [disabled]="form.invalid" class="btn bg-green br-10 w-100 p-2 justify-content-center d-flex align-items-center mt-2 fw-700 font-size-16 line-16 text-light">
                     Pesquisar
                 </button>
             </div>
