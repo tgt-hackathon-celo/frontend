@@ -5,12 +5,14 @@ import { MapaComponent } from './mapa/mapa.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoggedRouteModule } from './logged.route';
 import { AppComponent } from '../app.component';
+import { MinhasAcoesComponent } from './minhas-acoes/minhas-acoes.component';
 
 
 @NgModule({
   declarations: [
     LoggedComponent,
     MapaComponent,
+    MinhasAcoesComponent,
   ],
   imports: [
     CommonModule,

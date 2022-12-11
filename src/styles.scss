@@ -88,8 +88,8 @@
     font-size: 28px;
 }
 
-.font-size-32 {
-    font-size: 32px;
+.font-size-30 {
+    font-size: 30px;
 }
 
 .font-size-36 {
@@ -136,8 +136,8 @@
     line-height: 32px !important;
 }
 
-.line-34 {
-    line-height: 34px !important;
+.line-36 {
+    line-height: 36px !important;
 }
 
 .line-43 {
@@ -186,12 +186,25 @@
     display: none;
 }
 
+.border-bottom-gray {
+    border-bottom: 1px solid #E5E2E2;
+}
+
+.overflow-y {
+    overflow-y: scroll;
+}
+
 .z-10 {
     z-index: 10;
 }
 
 .h-40 {
     height: 40px;
+}
+
+.w50h50 {
+    width: 50px;
+    height: 50px;
 }
 
 .w-fit {
@@ -206,8 +219,12 @@
     overflow-y: scroll;
 }
 
-.w-48{
+.w-48 {
     width: 48px;
+}
+
+.cursor {
+    cursor: pointer;
 }
 
 // background
@@ -264,6 +281,26 @@
 }
 
 
+// PERFIL
+.article {
+    top: -40px;
+    border-radius: 15px 15px 0px 0px !important;
+}
+
+.wallpaper-perfil {
+    background-image: url(./assets/img/bar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.img-bg-perfil {
+    background-image: url(https://awsimages.detik.net.id/community/media/visual/2020/08/12/mia-khalifa-9_169.jpeg?w=620);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @media(max-width:1000px) {
     .search-zone {
@@ -299,10 +336,12 @@
     .col-map {
         padding: 0 !important;
     }
-    .linebar{
+
+    .linebar {
         margin: 0 20px;
     }
-    .sidebar{
+
+    .sidebar {
         padding: 0 19px;
     }
 }

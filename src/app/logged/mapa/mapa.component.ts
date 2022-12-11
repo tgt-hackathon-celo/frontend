@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router} from '@angular/router';
+import { Router } from '@angular/router';
 import { DatamockService } from 'src/service/datamock.service';
 
 @Component({
@@ -29,11 +29,13 @@ export class MapaComponent implements OnInit {
     this.searchresult = this.datamockservice.result;
 
   }
-
+  goProfile() {
+    this.router.navigate(['logged/perfil']);
+  }
   goSearch() {
     this.searchzone = !this.searchzone;
   }
-  btnsidebar(){
+  btnsidebar() {
     this.linebar = !this.linebar;
     this.sidebar = !this.sidebar;
   }

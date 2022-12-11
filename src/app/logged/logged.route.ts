@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { MapaComponent } from './mapa/mapa.component';
 
 import { LoggedComponent } from './logged.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { MinhasAcoesComponent } from './minhas-acoes/minhas-acoes.component';
 
 const routes: Routes = [
   {
@@ -11,7 +13,15 @@ const routes: Routes = [
     children: [
       {
         path: 'map',
-        component: MapaComponent, 
+        component: MapaComponent,
+      },
+      {
+        path: 'perfil',
+        component: PerfilComponent,
+      },
+      {
+        path: 'actions',
+        component: MinhasAcoesComponent,
       },
     ],
   },
@@ -21,4 +31,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class LoggedRouteModule {}
+export class LoggedRouteModule { }

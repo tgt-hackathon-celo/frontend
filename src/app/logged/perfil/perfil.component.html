@@ -1,3 +1,68 @@
 <main class="w-100 h-100">
-    <div class="wallpaper-profile w-100"></div>
+    <div class="wallpaper-perfil w-100">
+        <div class="w-100 h-75 d-flex align-items-center">
+            <img (click)="goBack()" src="../../../assets/img/arrow-l.svg" class="pl-4 cursor"/>
+        </div>
+    </div>
+    <article class="px-4 position-relative article pt-5 w-100 h-100 bg-white">
+        <div class="row">
+            <div class="col d-flex align-items-center">
+                <div class="img-bg-perfil w50h50 br-10"></div>
+                <p class="d-grid ml-3 mb-0">
+                    <span class="fw-700 font-size-30 line-36 color-black">Joana Menezes</span> 
+                    <span class="fw-300 font-size-15 line-18 color-muted">meuemail@email.com</span>
+                </p>
+            </div>
+            <div class="col-1 align-items-center d-flex justify-content-end">
+                <img src="../../../assets/img/logout.svg" />
+            </div>
+            <div class="col-12 my-4">
+                <div class="w-100 py-2 px-3 border br-20 d-flex justify-content-between">
+                    <p class="mb-0 fw-300 font-size-16 line-19 color-muted">
+                        Compartilhe nosso aplicativo e ganhe recompensas
+                    </p>
+                    <img src="../../../assets/img/present.png" class="cursor"/>
+                </div>
+            </div>
+            <div (click)="goMyActions()" class="col-12 px-3">
+                <div class="row">
+                    <div class="col-1 d-flex align-items-center">
+                        <img src="../../../assets/img/calendar.png" class="w-fit">
+                    </div>
+                    <div class="col border-bottom-gray py-4 d-flex align-items-center justify-content-between">
+                        <h4 class="fw-700 mb-0 font-size-16 line-20 color-muted pl-4">
+                            Minhas ações
+                        </h4>
+                        <img src="../../../assets/img/arrow-r.svg" class="pl-4 cursor"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-3 mt-2">
+                <div class="row">
+                    <div class="col-1 d-flex align-items-center">
+                        <img src="../../../assets/img/wallet.png" class="w-fit">
+                    </div>
+                    <div class="col border-bottom-gray py-4 d-flex align-items-center justify-content-between">
+                        <h4 class="fw-700 mb-0 font-size-16 line-20 color-muted pl-4">
+                            Criar uma carteira
+                        </h4>
+                        <img src="../../../assets/img/arrow-r.svg" class="pl-4 cursor"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-3 mt-2">
+                <div class="row">
+                    <div class="col-1 d-flex align-items-center">
+                        <img src="../../../assets/img/send.png" class="w-fit">
+                    </div>
+                    <div class="col py-4 d-flex align-items-center justify-content-between">
+                        <h4 class="fw-700 mb-0 font-size-16 line-20 color-muted pl-4">
+                            Enviar tokens
+                        </h4>
+                        <img src="../../../assets/img/arrow-r.svg" class="pl-4 cursor"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
 </main>

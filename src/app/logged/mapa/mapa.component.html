@@ -1,7 +1,7 @@
 <main class="w-100 h-100">
     <form [formGroup]="form" class="row">
         <div class="col-5 col-map position-absolute max-w-430 m-3 z-10">
-            <div (click)="btnsidebar()" class="w-fit bg-blur mb-3 linebar d-none br-10 bg-whitetransparent p-2 h-auto">
+            <div (click)="btnsidebar()" class="w-fit cursor bg-blur mb-3 linebar d-none br-10 bg-whitetransparent p-2 h-auto">
                 <i [class]="linebar ? 'd-none':'d-flex'" class="bi mx-2 font-size-20 color-black bi-list"></i>
                 <i [class]="linebar ? 'd-flex':'d-none'" class="bi mx-2 bi-x-lg font-size-20 color-black"></i>
             </div>
@@ -13,7 +13,7 @@
                 <button type="button" class="btn bg-white br-10 mx-1 w-75 p-2 justify-content-center d-flex align-items-center fw-700 font-size-16 line-18 color-muted">
                     <i class="bi mr-2 bi-calendar-plus"></i> Criar ação
                 </button>
-                <div class="w-48 bg-profile br-10"></div>
+                <div (click)="goProfile()" class="w-48 cursor bg-profile br-10"></div>
             </div>
             <div class="w-100 mt-4 d-block bg-blur br-10 bg-whitetransparent px-3 py-2 h-auto">
                 <input type="search" placeholder="Pesquisa" class="btn text-left br-10 w-100 p-2 fw-300 font-size-16 line-18 color-black"/>
