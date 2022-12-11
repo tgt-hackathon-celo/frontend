@@ -20,8 +20,7 @@ export class MapaComponent implements OnInit {
     public router: Router
   ) {
     this.form = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required]]
+      search: ['', [Validators.required]]
     })
   }
 
