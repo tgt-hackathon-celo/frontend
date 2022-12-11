@@ -5,6 +5,7 @@ import { MapaComponent } from './mapa/mapa.component';
 import { LoggedComponent } from './logged.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { MinhasAcoesComponent } from './minhas-acoes/minhas-acoes.component';
+import {SendTokensComponent} from "./send-tokens/send-tokens.component";
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
       {
         path: 'actions',
         component: MinhasAcoesComponent,
+      },
+      {
+        path: 'send-tokens',
+        component: SendTokensComponent,
       },
     ],
   },
