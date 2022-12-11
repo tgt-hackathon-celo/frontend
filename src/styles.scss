@@ -15,6 +15,19 @@
     font-family: 'helvetica' !important;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #01ff5e00 !important;
+}
+
 
 /* fonts */
 
@@ -144,7 +157,7 @@
 }
 
 // color
-.text-black {
+.color-black {
     color: #505050;
 }
 
@@ -156,12 +169,45 @@
 .br-10 {
     border-radius: 10px;
 }
+
+.br-20 {
+    border-radius: 20px;
+}
+
 .br-100 {
     border-radius: 100px;
 }
 
+.d-grid {
+    display: grid;
+}
+
+.d-none {
+    display: none;
+}
+
 .z-10 {
     z-index: 10;
+}
+
+.h-40 {
+    height: 40px;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.max-w-430 {
+    max-width: 430px;
+}
+
+.overflow-y {
+    overflow-y: scroll;
+}
+
+.w-48{
+    width: 48px;
 }
 
 // background
@@ -173,11 +219,19 @@
     background-color: rgba(255, 255, 255, 0.31);
 }
 
-.bg-green{
+.bg-white {
+    background-color: white;
+}
+
+.bg-green {
     background-color: #2E8A5F;
 }
 
-.bg-orange{
+.bg-muted {
+    background-color: #C5C5C5;
+}
+
+.bg-orange {
     background-color: #F1BB62;
 }
 
@@ -207,4 +261,76 @@
 
 .input-login {
     height: 51px !important;
+}
+
+
+
+@media(max-width:1000px) {
+    .search-zone {
+        height: calc(100vh - 279px) !important;
+        animation-name: searchresult;
+        animation-duration: .5s;
+        margin-top: 2rem;
+    }
+
+    @keyframes searchresult {
+        0% {
+            margin-top: 10rem !important;
+            opacity: 0;
+        }
+
+        100% {
+            margin-top: 2rem !important;
+            opacity: 1;
+        }
+    }
+
+    .sidebar {
+        margin-left: -500px;
+    }
+
+    .linebar {
+        display: flex !important;
+        ;
+    }
+}
+
+@media(max-width: 430px) {
+    .col-map {
+        padding: 0 !important;
+    }
+    .linebar{
+        margin: 0 20px;
+    }
+    .sidebar{
+        padding: 0 19px;
+    }
+}
+
+@media(min-width:999px) {
+    .search-zone {
+        height: calc(100vh - 229px) !important;
+        animation-name: searchresult;
+        animation-duration: .5s;
+    }
+
+    @keyframes searchresult {
+        0% {
+            margin-top: 10rem !important;
+            opacity: 0;
+        }
+
+        100% {
+            margin-top: 2rem !important;
+            opacity: 1;
+        }
+    }
+
+    .sidebar {
+        display: block !important;
+    }
+
+    .linebar {
+        display: none !important;
+    }
 }

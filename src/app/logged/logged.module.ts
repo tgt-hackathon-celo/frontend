@@ -7,11 +7,10 @@ import { LoggedRouteModule } from './logged.route';
 import { AppComponent } from '../app.component';
 
 
-
 @NgModule({
   declarations: [
     LoggedComponent,
-    MapaComponent
+    MapaComponent,
   ],
   imports: [
     CommonModule,
