@@ -15,12 +15,14 @@ export class PerfilComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  goMyActions(){
+  goMyActions() {
     this.router.navigate(['logged/actions']);
   }
-
-  goBack(){
-    this.router.navigate(['/']);  
+  sendtokens() {
+    this.router.navigate(['logged/send-tokens']);
+  }
+  goBack() {
+    this.router.navigate(['logged/map']);
   }
 
   logOut() {

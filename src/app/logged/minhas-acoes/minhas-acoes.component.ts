@@ -25,5 +25,8 @@ export class MinhasAcoesComponent implements OnInit {
   goBack() {
     this.router.navigate(['logged/perfil']);
   }
+  sendtokens() {
+    this.router.navigate(['logged/token-send-confirmation']);
+  }
 
 }
