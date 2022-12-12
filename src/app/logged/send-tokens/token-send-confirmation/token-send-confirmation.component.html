@@ -11,23 +11,37 @@
           Enviar tokens
         </p>
         <span class="fw-700 font-size-16 line-19 color-black">
-                   Selecione a ação
-                </span>
+          Selecione a ação
+        </span>
       </div>
       <div class="col-12">
-        <div *ngFor="let item of myactionsnext" class="w-100 border d-block bg-white mt-3 p-3 br-20">
+        <div *ngFor="let item of tokensend" class="w-100 border d-block bg-white mt-3 p-3 br-20">
           <p class="fw-700 font-size-14 line-16 d-grid color-black">{{item.name}},
             <span class="fw-400 font-size-14 line-16 color-muted">{{item.date}}</span></p>
           <p class="fw-700 font-size-14 line-16 color-muted">
             Finalizado há:<span class="fw-400 font-size-14 line-16 ml-2 color-black"> <b>{{item.time}}</b> </span>
           </p>
-          <div class="w-100 text-center">
-            <button type="button" class="btn btn-send-tokens" (click)="send()">
-              Enviar tokens
-            </button>
+          <span class="fw-700 font-size-16 line-19 color-black">
+          Selecione a ação
+        </span>
+         <div class="my-3">
+           <input type="text" id="wallet" class="form-control input-login" formControlName="wallet" placeholder="Digite">
+         </div>
+          <div class="w-100 d-flex my-3 justify-content-between">
+            <button (click)="enableDisableRule()" class="toggle" [class.btn--disable]="toggle1">Email</button>
+            <button (click)="enableDisableRules()" class="toggle" [class.btn--disable]="toggle">Carteira</button>
           </div>
+          <span class="fw-700 font-size-16 line-19 color-black">
+         <b>Valor: 10</b>
+        </span>
+         <div class="mt-5 justify-content-center">
+           <button type="button" class="btn btn-send-tokens">
+             Enviar tokens
+           </button>
+         </div>
         </div>
       </div>
+
     </div>
   </article>
 </main>

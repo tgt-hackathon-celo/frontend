@@ -26,6 +26,7 @@ export class SendTokensComponent implements OnInit {
     this.router.navigate(['logged/perfil']);
   }
 
-
-
+  send(){
+    this.router.navigate(['logged/token-send-confirmation'])
+  }
 }
