@@ -18,7 +18,10 @@ export class PerfilComponent implements OnInit {
   goMyActions(){
     this.router.navigate(['logged/actions']);
   }
+  sendtokens() {
+    this.router.navigate(['logged/send-tokens']);
+  }
   goBack(){
-    this.router.navigate(['logged/map']);  
+    this.router.navigate(['logged/map']);
   }
 }
