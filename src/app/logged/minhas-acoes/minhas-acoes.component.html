@@ -1,0 +1,55 @@
+<main class="w-100 h-100">
+    <div class="wallpaper-perfil w-100">
+        <div class="w-100 h-75 d-flex align-items-center">
+            <img (click)="goBack()" src="../../../assets/img/arrow-l.svg" class="pl-4 cursor"/>
+        </div>
+    </div>
+    <article class="px-4 d-flex justify-content-center position-relative article pt-5 w-100 h-100 bg-white">
+        <div class="row max-w-500 overflow-y "style="height: calc(100vh - 148px) !important;">
+            <div class="col-12">
+                <p class="fw-700 font-size-30 line-34 color-black">
+                    Minhas ações
+                </p>
+                <span class="fw-700 font-size-16 line-19 color-black">
+                    Próximos
+                </span>
+            </div>
+            <div class="col-12">
+                <div *ngFor="let item of myactionsnext" class="w-100 border d-block bg-white my-3 p-3 br-20">
+                    <p class="fw-700 font-size-14 line-16 d-grid color-black">{{item.name}},
+                        <span class="fw-400 font-size-14 line-16 color-muted">{{item.date}}</span></p>
+                    <p class="fw-700 font-size-14 line-16 color-black">
+                        Criado há: :&nbsp;<span class="fw-400 font-size-14 line-16 color-muted">{{item.time}}</span>
+                    </p>
+                    <div class="w-100 d-flex">
+                        <button type="button" class="btn br-10 bg-muted text-light fw-700 mr-2 font-size-14 line-16 h-40 w-75">
+                           Editar
+                        </button>
+                        <button type="button" class="btn btn-outline-danger br-10 bg-white text-danger fw-700 mr-2 font-size-14 line-16 h-40 w-50">
+                            Excluir
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="fw-700 mb-0 font-size-16 line-19 color-black">
+                    Concluídos
+                </p>
+            </div>
+          <div class="col-12">
+            <div *ngFor="let item of myactionsnext" class="w-100 border d-block bg-white my-3 p-3 br-20">
+              <p class="fw-700 font-size-14 line-16 d-grid color-black">{{item.name}},
+                <span class="fw-400 font-size-14 line-16 color-muted">{{item.date}}</span></p>
+              <p class="fw-700 font-size-14 line-16 color-muted">
+                Finalizado há:<span class="fw-400 font-size-14 line-16 ml-2 color-black"> <b>{{item.time}}</b> </span>
+              </p>
+              <div class="w-100 text-center">
+                <button type="button" class="btn btn-send-tokens" (click)="sendtokens()">
+                  Enviar tokens
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </article>
+</main>

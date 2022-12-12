@@ -1,0 +1,58 @@
+
+// MAPS
+.btn-plus {
+    right: 2%;
+    bottom: 2%;
+}
+
+.bg-profile {
+    background-image: url(https://thispersondoesnotexist.com/image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bar-gray {
+    width: 37px;
+    height: 7px;
+    background: rgb(141, 141, 141, 0.25);
+    border-radius: 100px;
+}
+
+.search-zone {
+    height: calc(100vh - 229px);
+    animation-name: searchresult;
+    animation-duration: .5s;
+    margin-top: 2rem;
+}
+
+@keyframes searchresult {
+    0% {
+        margin-top: 10rem;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 2rem;
+        opacity: 1;
+    }
+}
+
+.sidebar {
+    animation-name: sidebaranime;
+    animation-duration: .5s;
+    margin-left: 0;
+    display: block;
+}
+
+@keyframes sidebaranime {
+    0% {
+        margin-left: -10rem;
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 0rem;
+        opacity: 1;
+    }
+}

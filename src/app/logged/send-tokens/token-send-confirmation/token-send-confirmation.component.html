@@ -1,0 +1,47 @@
+<main class="w-100 h-100">
+  <div class="wallpaper-perfil w-100">
+    <div class="w-100 h-75 d-flex align-items-center">
+      <img (click)="goBack()" src="../../../assets/img/arrow-l.svg" class="pl-4 cursor"/>
+    </div>
+  </div>
+  <article class="px-4 d-flex justify-content-center position-relative article pt-5 w-100 h-100 bg-white">
+    <div class="row max-w-500 overflow-y ">
+      <div class="col-12">
+        <p class="fw-700 font-size-30 line-34 color-black">
+          Enviar tokens
+        </p>
+        <span class="fw-700 font-size-16 line-19 color-black">
+          Selecione a ação
+        </span>
+      </div>
+      <div class="col-12">
+        <div *ngFor="let item of tokensend" class="w-100 border d-block bg-white mt-3 p-3 br-20">
+          <p class="fw-700 font-size-14 line-16 d-grid color-black">{{item.name}},
+            <span class="fw-400 font-size-14 line-16 color-muted">{{item.date}}</span></p>
+          <p class="fw-700 font-size-14 line-16 color-muted">
+            Finalizado há:<span class="fw-400 font-size-14 line-16 ml-2 color-black"> <b>{{item.time}}</b> </span>
+          </p>
+          <span class="fw-700 font-size-16 line-19 color-black">
+          Selecione a ação
+        </span>
+         <div class="my-3">
+           <input type="text" id="wallet" class="form-control input-login" formControlName="wallet" placeholder="Digite">
+         </div>
+          <div class="w-100 d-flex my-3 justify-content-between">
+            <button (click)="enableDisableRule()" class="toggle" [class.btn--disable]="toggle1">Email</button>
+            <button (click)="enableDisableRules()" class="toggle" [class.btn--disable]="toggle">Carteira</button>
+          </div>
+          <span class="fw-700 font-size-16 line-19 color-black">
+         <b>Valor: 10</b>
+        </span>
+         <div class="mt-5 justify-content-center">
+           <button type="button" class="btn btn-send-tokens">
+             Enviar tokens
+           </button>
+         </div>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</main>
