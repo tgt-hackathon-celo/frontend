@@ -18,7 +18,13 @@ export class PerfilComponent implements OnInit {
   goMyActions(){
     this.router.navigate(['logged/actions']);
   }
+
   goBack(){
-    this.router.navigate(['logged/map']);  
+    this.router.navigate(['/']);  
   }
+
+  logOut() {
+    this.router.navigate(['/'])
+  }
+
 }
