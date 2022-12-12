@@ -6,6 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoggedRouteModule } from './logged.route';
 import { AppComponent } from '../app.component';
 import { MinhasAcoesComponent } from './minhas-acoes/minhas-acoes.component';
+import { SendTokensComponent } from './send-tokens/send-tokens.component';
+import { TokenSendConfirmationComponent } from './send-tokens/token-send-confirmation/token-send-confirmation.component';
 
 
 @NgModule({
@@ -13,6 +15,8 @@ import { MinhasAcoesComponent } from './minhas-acoes/minhas-acoes.component';
     LoggedComponent,
     MapaComponent,
     MinhasAcoesComponent,
+    SendTokensComponent,
+    TokenSendConfirmationComponent,
   ],
   imports: [
     CommonModule,

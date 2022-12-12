@@ -5,7 +5,7 @@
         </div>
     </div>
     <article class="px-4 d-flex justify-content-center position-relative article pt-5 w-100 h-100 bg-white">
-        <div class="row max-w-500 overflow-y "style="height: calc(100vh - 148px) !important;"> 
+        <div class="row max-w-500 overflow-y "style="height: calc(100vh - 148px) !important;">
             <div class="col-12">
                 <p class="fw-700 font-size-30 line-34 color-black">
                     Minhas ações
@@ -36,21 +36,20 @@
                     Concluídos
                 </p>
             </div>
-            <div class="col-12">
-                <div *ngFor="let item of myactionshistoric" class="w-100 d-block border bg-white my-3 p-3 br-20">
-                    <p class="fw-700 font-size-14 line-16 d-grid color-black">{{item.name}},
-                        <span class="fw-400 font-size-14 line-16 color-muted">{{item.date}}</span></p>
-                    <p class="fw-700 font-size-14 line-16 color-black">
-                        Criado há: :&nbsp;<span class="fw-400 font-size-14 line-16 color-muted">{{item.time}}</span>
-                    </p>
-                    <div class="w-100 d-flex">
-                        <button type="button" class="btn br-10 bg-muted text-light fw-700 mr-2 font-size-14 line-16 h-40 w-100">
-                           Histórico
-                        </button>
-                    </div>
-                </div>
+          <div class="col-12">
+            <div *ngFor="let item of myactionsnext" class="w-100 border d-block bg-white my-3 p-3 br-20">
+              <p class="fw-700 font-size-14 line-16 d-grid color-black">{{item.name}},
+                <span class="fw-400 font-size-14 line-16 color-muted">{{item.date}}</span></p>
+              <p class="fw-700 font-size-14 line-16 color-muted">
+                Finalizado há:<span class="fw-400 font-size-14 line-16 ml-2 color-black"> <b>{{item.time}}</b> </span>
+              </p>
+              <div class="w-100 text-center">
+                <button type="button" class="btn btn-send-tokens">
+                  Enviar tokens
+                </button>
+              </div>
             </div>
-
+          </div>
         </div>
     </article>
 </main>

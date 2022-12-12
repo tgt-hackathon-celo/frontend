@@ -1,20 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { DatamockService } from 'src/service/datamock.service';
+import {Router} from "@angular/router";
+import {DatamockService} from "../../../service/datamock.service";
 
 @Component({
-  selector: 'app-minhas-acoes',
-  templateUrl: './minhas-acoes.component.html',
-  styleUrls: ['./minhas-acoes.component.scss']
+  selector: 'app-send-tokens',
+  templateUrl: './send-tokens.component.html',
+  styleUrls: ['./send-tokens.component.scss']
 })
-export class MinhasAcoesComponent implements OnInit {
+export class SendTokensComponent implements OnInit {
+
   myactionsnext: any[];
   myactionshistoric: any[];
 
   constructor(
     private router: Router,
     private datamockservice: DatamockService,
-
   ) { }
 
   ngOnInit(): void {
@@ -26,4 +26,7 @@ export class MinhasAcoesComponent implements OnInit {
     this.router.navigate(['logged/perfil']);
   }
 
+  send(){
+    this.router.navigate(['logged/token-send-confirmation'])
+  }
 }
