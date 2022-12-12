@@ -49,6 +49,5 @@ export class TokenSendConfirmationComponent implements OnInit {
     this.toggle1 = !this.toggle1;
     this.toggle = false;
     this.toggle1 = true;
-    console.log('chegou')
   }
 }
